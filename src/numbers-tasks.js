@@ -448,7 +448,7 @@ function getNumberValue(number) {
  * '5'      => false
  */
 function isNumber(value) {
-  return Number(value) === value;
+  return Number.isFinite(value);
 }
 
 /**
@@ -462,8 +462,8 @@ function isNumber(value) {
  * 5.1  => false
  * '5'  => false
  */
-function isInteger(/* number */) {
-  throw new Error('Not implemented');
+function isInteger(number) {
+  return Number.isInteger(number);
 }
 
 /**
@@ -476,8 +476,8 @@ function isInteger(/* number */) {
  * '4.567abcdefgh' => 4.567
  * 'abcdefgh'      => NaN
  */
-function getFloatOnString(/* str */) {
-  throw new Error('Not implemented');
+function getFloatOnString(str) {
+  return Number.parseFloat(str);
 }
 
 /**
