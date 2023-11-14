@@ -629,6 +629,7 @@ function getRandomInteger(min, max) {
  * @example:
  * 3, 4 => 5
  */
+
 function getHypotenuse(a, b) {
   return Math.hypot(a, b);
 }
