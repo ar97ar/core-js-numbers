@@ -648,13 +648,13 @@ function getHypotenuse(a, b) {
  * 15 => 8
  */
 function getCountOfOddNumbers(number) {
-  let result = 0;
+  let res = 0;
   for (let i = 0; i <= Math.abs(number); i += 1) {
     if (i % 2 !== 0) {
-      result += 1;
+      res += 1;
     }
   }
-  return result;
+  return res;
 }
 
 module.exports = {
